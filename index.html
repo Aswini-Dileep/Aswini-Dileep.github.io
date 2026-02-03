@@ -263,6 +263,46 @@ footer a {
   border-color: #4da3ff;
   transform: translateY(-2px);
 }
+/* ===== SKILLS (CARD STYLE) ===== */
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill-tile {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.08),
+    rgba(255,255,255,0.02)
+  );
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.35s ease;
+}
+
+.skill-tile img {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 12px;
+  object-fit: contain;
+}
+
+.skill-tile p {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.skill-tile:hover {
+  transform: translateY(-6px);
+  border-color: #4da3ff;
+  box-shadow: 0 12px 30px rgba(77,163,255,0.25);
+}
   
 
   
@@ -339,18 +379,46 @@ footer a {
 </section>
 
 
+
 <!-- SKILLS -->
 <section id="skills">
   <h2>Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-card"><i class="fab fa-python"></i><p>Python</p></div>
-    <div class="skill-card"><i class="fas fa-database"></i><p>SQL</p></div>
-    <div class="skill-card"><i class="fas fa-chart-bar"></i><p>Power BI</p></div>
-    <div class="skill-card"><i class="fas fa-chart-line"></i><p>Tableau</p></div>
-    <div class="skill-card"><i class="fas fa-file-excel"></i><p>Excel</p></div>
-    <div class="skill-card"><i class="fab fa-github"></i><p>GitHub</p></div>
+
+  <div class="skills-wrapper">
+
+    <div class="skill-tile">
+      <img src="python.png" alt="Python">
+      <p>Python</p>
+    </div>
+
+    <div class="skill-tile">
+      <img src="sql.png" alt="SQL">
+      <p>SQL</p>
+    </div>
+
+    <div class="skill-tile">
+      <img src="powerbi.png" alt="Power BI">
+      <p>Power BI</p>
+    </div>
+
+    <div class="skill-tile">
+      <img src="tableau.png" alt="Tableau">
+      <p>Tableau</p>
+    </div>
+
+    <div class="skill-tile">
+      <img src="excel.png" alt="Excel">
+      <p>Excel</p>
+    </div>
+
+    <div class="skill-tile">
+      <img src="GitHubLogo.png" alt="GitHub">
+      <p>GitHub</p>
+    </div>
+
   </div>
 </section>
+
 
 <!-- PROJECTS -->
 <section id="projects">
