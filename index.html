@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Aswini Dileep | Junior Data Scientist / Data Analyst</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Aswini Dileep | Junior Data Scientist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font (Kelly Adams–style) -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<!-- FONT -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- ICONS -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 <style>
+/* ===== GLOBAL ===== */
 body {
-  font-family: 'Inter', sans-serif;
   margin: 0;
+  font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   color: #ffffff;
 }
@@ -25,8 +26,46 @@ body {
   padding: 60px 20px;
 }
 
-/* ===== HERO SECTION ===== */
+h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
 
+/* ===== NAVBAR ===== */
+.navbar {
+  max-width: 1100px;
+  margin: auto;
+  padding: 25px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #dbefff;
+  font-size: 14px;
+}
+
+.nav-links a:hover {
+  color: #4da3ff;
+}
+
+/* ===== HERO ===== */
 .hero {
   display: flex;
   align-items: center;
@@ -40,9 +79,16 @@ body {
   max-width: 600px;
 }
 
+.hero-intro {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9fd3ff;
+  margin-bottom: 10px;
+}
+
 .hero-text h1 {
   font-size: 46px;
-  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -52,25 +98,24 @@ body {
 
 .hero-text h3 {
   font-size: 22px;
-  font-weight: 400;
   color: #9fd3ff;
   margin-bottom: 20px;
 }
 
 .hero-text p {
-  font-size: 16px;
-  line-height: 1.7;
   color: #dbefff;
   max-width: 520px;
+  line-height: 1.7;
 }
 
+/* BUTTONS */
 .hero-buttons {
   margin-top: 30px;
 }
 
 .hero-buttons a {
   display: inline-block;
-  margin-right: 14px;
+  margin-right: 12px;
   margin-bottom: 10px;
   padding: 12px 24px;
   border-radius: 30px;
@@ -79,23 +124,14 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Primary button */
 .hero-buttons a.primary {
   background: #4da3ff;
-  color: #ffffff;
-  border: none;
+  color: #fff;
 }
 
-/* Secondary button */
 .hero-buttons a.secondary {
   border: 1px solid #4da3ff;
   color: #4da3ff;
-}
-
-/* Outline buttons */
-.hero-buttons a.outline {
-  border: 1px solid rgba(255,255,255,0.4);
-  color: #ffffff;
 }
 
 .hero-buttons a:hover {
@@ -103,6 +139,36 @@ body {
   opacity: 0.9;
 }
 
+/* FOLLOW ME */
+.follow-me {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9fd3ff;
+}
+
+.follow-me a {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.follow-me a:hover {
+  background: #4da3ff;
+  border-color: #4da3ff;
+}
+
+/* HERO IMAGE */
 .hero img {
   width: 260px;
   height: 260px;
@@ -113,29 +179,59 @@ body {
     0 0 40px rgba(77,163,255,0.5);
 }
 
-
-/* SECTION HEADINGS */
-h2 {
+/* SECTIONS */
+section {
   margin-top: 100px;
-  margin-bottom: 30px;
-  font-size: 32px;
-  color: #ffffff;
 }
 
-/* CARDS */
-.skill-card,
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 25px;
+}
+
+.skill-card {
+  text-align: center;
+  padding: 20px 10px;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+}
+
+.skill-card i {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* PROJECTS */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
 .project-card {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #fff;
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  background: #1c2b33;
+}
+
+.project-content {
+  padding: 20px;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 40px;
-  margin-top: 100px;
+  padding: 40px 20px;
   border-top: 1px solid rgba(255,255,255,0.2);
+  margin-top: 100px;
 }
 
 footer a {
@@ -143,17 +239,28 @@ footer a {
   margin: 0 10px;
 }
 </style>
-
 </head>
 
 <body>
 
+<nav class="navbar">
+  <div class="nav-logo">Aswini Dileep</div>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 <div class="container">
 
-
-<!-- HERO SECTION -->
-<div class="hero">
+<!-- HERO -->
+<div class="hero" id="home">
   <div class="hero-text">
+    <p class="hero-intro">Welcome to my portfolio</p>
     <h1>Hello, I’m <span class="highlight">Aswini Dileep</span></h1>
     <h3>Junior Data Scientist & Data Analyst</h3>
 
@@ -165,137 +272,79 @@ footer a {
 
     <div class="hero-buttons">
       <a href="#projects" class="primary">View Projects</a>
-      <a href="#" class="secondary">Download CV</a>
-      <a href="https://github.com/Aswini-Dileep" target="_blank" class="outline">GitHub</a>
-      <a href="https://www.linkedin.com" target="_blank" class="outline">LinkedIn</a>
+      <a href="Aswini_Dileep_CV.pdf" class="secondary" download>Download CV</a>
+    </div>
+
+    <div class="follow-me">
+      Follow me on →
+      <a href="https://github.com/Aswini-Dileep" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
     </div>
   </div>
 
   <img src="Aswini_Dileep.png" alt="Aswini Dileep">
 </div>
 
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Junior Data Scientist / Data Analyst with a Computer Science background and
+    hands-on experience in analytics, machine learning, and BI dashboards.
+  </p>
+</section>
 
-  <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a Junior Data Scientist / Data Analyst with a background in Computer Science and Engineering and hands-on
-      experience in data analysis, business intelligence, and applied machine learning.
-      I have worked on real-world projects involving data cleaning, exploratory analysis, predictive modeling,
-      and dashboard development using Python, SQL, Power BI, Excel, and Tableau.
-    </p>
-  </section>
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-card"><i class="fab fa-python"></i><p>Python</p></div>
+    <div class="skill-card"><i class="fas fa-database"></i><p>SQL</p></div>
+    <div class="skill-card"><i class="fas fa-chart-bar"></i><p>Power BI</p></div>
+    <div class="skill-card"><i class="fas fa-chart-line"></i><p>Tableau</p></div>
+    <div class="skill-card"><i class="fas fa-file-excel"></i><p>Excel</p></div>
+    <div class="skill-card"><i class="fab fa-github"></i><p>GitHub</p></div>
+  </div>
+</section>
 
-  <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
-
-    <div class="skills-group">
-      <h4>Programming & Query Languages</h4>
-      <div class="skills-grid">
-        <div class="skill-card"><i class="fab fa-python"></i><p>Python</p></div>
-        <div class="skill-card"><i class="fas fa-database"></i><p>SQL</p></div>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img>
+      <div class="project-content">
+        <h4>Disease Outbreak Prediction</h4>
+        <p>Python · ML · Power BI</p>
       </div>
     </div>
-
-    <div class="skills-group">
-      <h4>Data Visualization & BI</h4>
-      <div class="skills-grid">
-        <div class="skill-card"><i class="fas fa-chart-bar"></i><p>Power BI</p></div>
-        <div class="skill-card"><i class="fas fa-chart-line"></i><p>Tableau</p></div>
-        <div class="skill-card"><i class="fas fa-file-excel"></i><p>Excel</p></div>
+    <div class="project-card">
+      <img>
+      <div class="project-content">
+        <h4>Customer Churn Prediction</h4>
+        <p>Python · ML · Streamlit</p>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="skills-group">
-      <h4>Data Science & Analytics</h4>
-      <div class="skills-grid">
-        <div class="skill-card"><i class="fas fa-square-root-alt"></i><p>Statistics</p></div>
-        <div class="skill-card"><i class="fas fa-search"></i><p>EDA</p></div>
-        <div class="skill-card"><i class="fas fa-robot"></i><p>Machine Learning (Basic)</p></div>
-      </div>
-    </div>
-
-    <div class="skills-group">
-      <h4>Tools & Platforms</h4>
-      <div class="skills-grid">
-        <div class="skill-card"><i class="fab fa-github"></i><p>GitHub</p></div>
-        <div class="skill-card"><i class="fas fa-rocket"></i><p>Streamlit</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <img src="#" alt="Project screenshot">
-        <div class="project-content">
-          <h4>Disease Outbreak Prediction</h4>
-          <p>Built predictive models using climate and health datasets to analyze outbreak patterns.</p>
-          <div class="tools">Python · Machine Learning · Power BI</div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="#" alt="Project screenshot">
-        <div class="project-content">
-          <h4>Customer Churn Prediction</h4>
-          <p>Analyzed customer behavior data and built models to predict customer attrition.</p>
-          <div class="tools">Python · Machine Learning · Streamlit</div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="#" alt="Project screenshot">
-        <div class="project-content">
-          <h4>Power BI Sales Dashboard</h4>
-          <p>Designed interactive dashboards with KPIs and trends for business analysis.</p>
-          <div class="tools">Power BI · Excel · DAX</div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="#" alt="Project screenshot">
-        <div class="project-content">
-          <h4>HR Analytics Dashboard</h4>
-          <p>Developed an HR dashboard to analyze employee attrition and workforce trends.</p>
-          <div class="tools">Power BI · SQL</div>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="#" alt="Project screenshot">
-        <div class="project-content">
-          <h4>SQL Data Analysis</h4>
-          <p>Performed analysis using joins, aggregations, and window functions.</p>
-          <div class="tools">SQL</div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CERTIFICATIONS -->
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>IBM Data Science Professional Certificate</li>
-      <li>IBM Data Analyst Professional Certificate</li>
-      <li>Microsoft Power BI Data Analyst Professional Certificate</li>
-    </ul>
-  </section>
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>IBM Data Science Professional Certificate</li>
+    <li>IBM Data Analyst Professional Certificate</li>
+    <li>Microsoft Power BI Data Analyst</li>
+  </ul>
+</section>
 
 </div>
 
-<footer>
+<footer id="contact">
   <p>Contact</p>
   <a href="mailto:aswinidileep91@gmail.com">Email</a>
-  <a href="https://github.com/Aswini-Dileep" target="_blank">GitHub</a>
-  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+  <a href="https://github.com/Aswini-Dileep">GitHub</a>
+  <a href="https://www.linkedin.com">LinkedIn</a>
 </footer>
 
 </body>
