@@ -25,55 +25,82 @@ body {
   padding: 60px 20px;
 }
 
-/* HERO */
+/* ===== HERO SECTION ===== */
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 50px;
   flex-wrap: wrap;
+  min-height: 80vh;
+}
+
+.hero-text {
+  max-width: 600px;
 }
 
 .hero-text h1 {
   font-size: 46px;
+  font-weight: 600;
   margin-bottom: 10px;
+}
+
+.highlight {
+  color: #4da3ff;
 }
 
 .hero-text h3 {
   font-size: 22px;
+  font-weight: 400;
   color: #9fd3ff;
   margin-bottom: 20px;
 }
 
 .hero-text p {
+  font-size: 16px;
+  line-height: 1.7;
   color: #dbefff;
   max-width: 520px;
 }
 
+.hero-buttons {
+  margin-top: 30px;
+}
+
 .hero-buttons a {
   display: inline-block;
-  margin-right: 12px;
-  margin-top: 15px;
-  padding: 12px 22px;
+  margin-right: 14px;
+  margin-bottom: 10px;
+  padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 14px;
+  transition: all 0.3s ease;
 }
 
-.hero-buttons a:nth-child(1) {
+/* Primary button */
+.hero-buttons a.primary {
   background: #4da3ff;
-  color: #fff;
+  color: #ffffff;
+  border: none;
 }
 
-.hero-buttons a:nth-child(2) {
+/* Secondary button */
+.hero-buttons a.secondary {
   border: 1px solid #4da3ff;
   color: #4da3ff;
 }
 
-.hero-buttons a:nth-child(3),
-.hero-buttons a:nth-child(4) {
-  border: 1px solid #aaa;
-  color: #ddd;
+/* Outline buttons */
+.hero-buttons a.outline {
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #ffffff;
+}
+
+.hero-buttons a:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
 }
 
 .hero img {
@@ -81,8 +108,11 @@ body {
   height: 260px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 0 40px rgba(77,163,255,0.6);
+  box-shadow:
+    0 0 0 6px rgba(255,255,255,0.05),
+    0 0 40px rgba(77,163,255,0.5);
 }
+
 
 /* SECTION HEADINGS */
 h2 {
@@ -120,28 +150,30 @@ footer a {
 
 <div class="container">
 
-  <!-- HERO -->
-  <div class="hero">
-    <div class="hero-text">
-      <h1>Aswini Dileep</h1>
-      <h3>Junior Data Scientist / Data Analyst</h3>
 
-      <p>
-        I am a Junior Data Scientist / Data Analyst with a background in Computer Science and hands-on experience in
-        data analysis, business intelligence, and applied machine learning.
-        I work with Python, SQL, Power BI, and data visualization tools to support data-driven decision-making.
-      </p>
+<!-- HERO SECTION -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>Hello, I’m <span class="highlight">Aswini Dileep</span></h1>
+    <h3>Junior Data Scientist & Data Analyst</h3>
 
-      <div class="hero-buttons">
-        <a href="#projects">View Projects</a>
-        <a href="#">Download CV</a>
-        <a href="https://github.com/Aswini-Dileep" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-      </div>
+    <p>
+      I am a Junior Data Scientist and Data Analyst with hands-on experience in
+      data analysis, business intelligence, and applied machine learning.
+      I use Python, SQL, and Power BI to turn data into clear, decision-ready insights.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="primary">View Projects</a>
+      <a href="#" class="secondary">Download CV</a>
+      <a href="https://github.com/Aswini-Dileep" target="_blank" class="outline">GitHub</a>
+      <a href="https://www.linkedin.com" target="_blank" class="outline">LinkedIn</a>
     </div>
-
-    <img src="Aswini_Dileep.png" alt="Aswini Dileep">
   </div>
+
+  <img src="Aswini_Dileep.png" alt="Aswini Dileep">
+</div>
+
 
   <!-- ABOUT -->
   <section>
