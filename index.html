@@ -11,164 +11,109 @@
   <!-- Icons -->
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #ffffff;
-      color: #222;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
+<style>
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
-    }
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+}
 
-    h1, h2, h3 {
-      font-weight: 500;
-    }
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
 
-    h2 {
-      margin-bottom: 30px;
-    }
+.hero-text h1 {
+  font-size: 46px;
+  margin-bottom: 10px;
+}
 
-    /* HERO */
-    .hero {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-      flex-wrap: wrap;
-    }
+.hero-text h3 {
+  font-size: 22px;
+  color: #9fd3ff;
+  margin-bottom: 20px;
+}
 
-    .hero-text {
-      max-width: 600px;
-    }
+.hero-text p {
+  color: #dbefff;
+  max-width: 520px;
+}
 
-    .hero-text h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+.hero-buttons a {
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 15px;
+  padding: 12px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-    .hero-text h3 {
-      font-size: 22px;
-      color: #555;
-      margin-bottom: 20px;
-    }
+.hero-buttons a:nth-child(1) {
+  background: #4da3ff;
+  color: #fff;
+}
 
-    .hero-buttons a {
-      display: inline-block;
-      margin-right: 12px;
-      margin-top: 10px;
-      padding: 10px 18px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      text-decoration: none;
-      color: #222;
-      font-size: 14px;
-    }
+.hero-buttons a:nth-child(2) {
+  border: 1px solid #4da3ff;
+  color: #4da3ff;
+}
 
-    .hero-buttons a:hover {
-      background: #f5f5f5;
-    }
+.hero-buttons a:nth-child(3),
+.hero-buttons a:nth-child(4) {
+  border: 1px solid #aaa;
+  color: #ddd;
+}
 
-    .hero img {
-      width: 220px;
-      height: 220px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
+.hero img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 40px rgba(77,163,255,0.6);
+}
 
-    /* SECTIONS */
-    section {
-      margin-top: 80px;
-    }
+/* SECTION HEADINGS */
+h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: #ffffff;
+}
 
-    /* SKILLS */
-    .skills-group {
-      margin-bottom: 40px;
-    }
+/* CARDS */
+.skill-card,
+.project-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+}
 
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 25px;
-    }
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 40px;
+  margin-top: 100px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+}
 
-    .skill-card {
-      text-align: center;
-      padding: 20px 10px;
-      border: 1px solid #eee;
-      border-radius: 8px;
-    }
+footer a {
+  color: #9fd3ff;
+  margin: 0 10px;
+}
+</style>
 
-    .skill-card i {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
-
-    .skill-card p {
-      margin: 0;
-      font-size: 14px;
-    }
-
-    /* PROJECTS */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
-    }
-
-    .project-card {
-      border: 1px solid #eee;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .project-card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-      background: #f0f0f0;
-    }
-
-    .project-content {
-      padding: 20px;
-    }
-
-    .project-content h4 {
-      margin: 0 0 10px 0;
-      font-size: 18px;
-    }
-
-    .project-content p {
-      font-size: 14px;
-      margin-bottom: 10px;
-      color: #444;
-    }
-
-    .tools {
-      font-size: 13px;
-      color: #666;
-    }
-
-    /* FOOTER */
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      border-top: 1px solid #eee;
-      margin-top: 80px;
-    }
-
-    footer a {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #222;
-    }
-  </style>
 </head>
 
 <body>
