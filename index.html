@@ -1,65 +1,325 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Aswini Dileep | Junior Data Scientist / Data Analyst</title>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>Aswini Dileep | Junior Data Scientist / Data Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font (Kelly Adams–style) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #ffffff;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: 500;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text h3 {
+      font-size: 22px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .hero-buttons a {
+      display: inline-block;
+      margin-right: 12px;
+      margin-top: 10px;
+      padding: 10px 18px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #222;
+      font-size: 14px;
+    }
+
+    .hero-buttons a:hover {
+      background: #f5f5f5;
+    }
+
+    .hero img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    /* SECTIONS */
+    section {
+      margin-top: 80px;
+    }
+
+    /* SKILLS */
+    .skills-group {
+      margin-bottom: 40px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 25px;
+    }
+
+    .skill-card {
+      text-align: center;
+      padding: 20px 10px;
+      border: 1px solid #eee;
+      border-radius: 8px;
+    }
+
+    .skill-card i {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .skill-card p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      border: 1px solid #eee;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      background: #f0f0f0;
+    }
+
+    .project-content {
+      padding: 20px;
+    }
+
+    .project-content h4 {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+    }
+
+    .project-content p {
+      font-size: 14px;
+      margin-bottom: 10px;
+      color: #444;
+    }
+
+    .tools {
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #eee;
+      margin-top: 80px;
+    }
+
+    footer a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #222;
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif; max-width: 900px; margin: auto; line-height: 1.6;">
 
-    <h1>Aswini Dileep</h1>
-    <h2>Junior Data Scientist / Data Analyst</h2>
+<body>
 
-    
+<div class="container">
 
-    <hr>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Aswini Dileep</h1>
+      <h3>Junior Data Scientist / Data Analyst</h3>
 
-    <h3>About Me</h3>
+      <p>
+        I am a Junior Data Scientist / Data Analyst with a background in Computer Science and hands-on experience in
+        data analysis, business intelligence, and applied machine learning.
+        I work with Python, SQL, Power BI, and data visualization tools to support data-driven decision-making.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects">View Projects</a>
+        <a href="#">Download CV</a>
+        <a href="https://github.com/Aswini-Dileep" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <img src="Aswini_Dileep.png" alt="Aswini Dileep">
+  </div>
+
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
     <p>
-        I am a Junior Data Scientist / Data Analyst with hands-on experience in data cleaning,
-        analysis, and visualization using Python, SQL, Power BI, Excel, and Tableau.
-        I have worked on real-world projects including disease outbreak prediction under climate change
-        and customer churn analysis.
+      I am a Junior Data Scientist / Data Analyst with a background in Computer Science and Engineering and hands-on
+      experience in data analysis, business intelligence, and applied machine learning.
+      I have worked on real-world projects involving data cleaning, exploratory analysis, predictive modeling,
+      and dashboard development using Python, SQL, Power BI, Excel, and Tableau.
     </p>
+  </section>
 
-    <h3>Skills</h3>
+  <!-- SKILLS -->
+  <section>
+    <h2>Skills</h2>
+
+    <div class="skills-group">
+      <h4>Programming & Query Languages</h4>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-python"></i><p>Python</p></div>
+        <div class="skill-card"><i class="fas fa-database"></i><p>SQL</p></div>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h4>Data Visualization & BI</h4>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fas fa-chart-bar"></i><p>Power BI</p></div>
+        <div class="skill-card"><i class="fas fa-chart-line"></i><p>Tableau</p></div>
+        <div class="skill-card"><i class="fas fa-file-excel"></i><p>Excel</p></div>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h4>Data Science & Analytics</h4>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fas fa-square-root-alt"></i><p>Statistics</p></div>
+        <div class="skill-card"><i class="fas fa-search"></i><p>EDA</p></div>
+        <div class="skill-card"><i class="fas fa-robot"></i><p>Machine Learning (Basic)</p></div>
+      </div>
+    </div>
+
+    <div class="skills-group">
+      <h4>Tools & Platforms</h4>
+      <div class="skills-grid">
+        <div class="skill-card"><i class="fab fa-github"></i><p>GitHub</p></div>
+        <div class="skill-card"><i class="fas fa-rocket"></i><p>Streamlit</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="#" alt="Project screenshot">
+        <div class="project-content">
+          <h4>Disease Outbreak Prediction</h4>
+          <p>Built predictive models using climate and health datasets to analyze outbreak patterns.</p>
+          <div class="tools">Python · Machine Learning · Power BI</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="#" alt="Project screenshot">
+        <div class="project-content">
+          <h4>Customer Churn Prediction</h4>
+          <p>Analyzed customer behavior data and built models to predict customer attrition.</p>
+          <div class="tools">Python · Machine Learning · Streamlit</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="#" alt="Project screenshot">
+        <div class="project-content">
+          <h4>Power BI Sales Dashboard</h4>
+          <p>Designed interactive dashboards with KPIs and trends for business analysis.</p>
+          <div class="tools">Power BI · Excel · DAX</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="#" alt="Project screenshot">
+        <div class="project-content">
+          <h4>HR Analytics Dashboard</h4>
+          <p>Developed an HR dashboard to analyze employee attrition and workforce trends.</p>
+          <div class="tools">Power BI · SQL</div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="#" alt="Project screenshot">
+        <div class="project-content">
+          <h4>SQL Data Analysis</h4>
+          <p>Performed analysis using joins, aggregations, and window functions.</p>
+          <div class="tools">SQL</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section>
+    <h2>Certifications</h2>
     <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Power BI</li>
-        <li>Microsoft Excel</li>
-        <li>Tableau</li>
-        <li>Statistics & Data Analysis</li>
-        <li>Machine Learning (Basic)</li>
+      <li>IBM Data Science Professional Certificate</li>
+      <li>IBM Data Analyst Professional Certificate</li>
+      <li>Microsoft Power BI Data Analyst Professional Certificate</li>
     </ul>
+  </section>
 
-    <h3>Projects</h3>
+</div>
 
-    <p>
-    <strong>Disease Outbreak Prediction under Climate Change</strong><br>
-    Built machine learning models using climate and disease data to predict outbreak patterns.
-    Performed data cleaning, analysis, and visualized insights using Power BI.
-    </p>
-
-    <p>
-    <strong>Customer Churn Prediction</strong><br>
-    Analyzed customer behavior data to identify churn patterns.
-    Built classification models and deployed an interactive Streamlit application.
-    </p>
-
-    <h3>Certifications</h3>
-    <ul>
-        <li>IBM Data Science Professional Certificate</li>
-        <li>IBM Data Analyst Professional Certificate</li>
-        <li>Microsoft Power BI Data Analyst Professional Certificate</li>
-    </ul>
-
-
-    <h3>Contact</h3>
-    <p>
-        Email: aswinidileep91@gmail.com<br>
-        LinkedIn: <a href="https://www.linkedin.com/in/aswini-dileep">linkedin.com/in/aswini-dileep</a><br>
-        GitHub: <a href="https://github.com/Aswini-Dileep">github.com/Aswini-Dileep</a>
-    </p>
+<footer>
+  <p>Contact</p>
+  <a href="mailto:aswinidileep91@gmail.com">Email</a>
+  <a href="https://github.com/Aswini-Dileep" target="_blank">GitHub</a>
+  <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+</footer>
 
 </body>
 </html>
