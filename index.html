@@ -276,10 +276,10 @@ footer a {
   margin-bottom: 40px;
 }
 
-/* GRID */
+/* GRID: 4 items per row */
 .skills-wrapper {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 35px;
 }
 
@@ -294,46 +294,32 @@ footer a {
   border-radius: 18px;
   padding: 34px 22px;
   text-align: center;
-  transition: all 0.35s ease;
-  position: relative;
+  transition: all 0.3s ease;
 }
 
-/* ICON CONTAINER */
-.icon-wrap {
-  width: 54px;
-  height: 54px;
-  border-radius: 12px;
-  background: rgba(255,255,255,0.08);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 14px;
-}
-
-/* ICON IMAGE */
-.icon-wrap img {
-  width: 80%;
-  height: 80%;
+/* ICON */
+.skill-tile img {
+  width: 46px;
+  height: 46px;
   object-fit: contain;
-  background: transparent;
+  margin-bottom: 14px;
 }
 
-/* SKILL NAME */
+/* TEXT */
 .skill-tile p {
   margin: 0;
   font-size: 15px;
   font-weight: 500;
   color: #ffffff;
-  letter-spacing: 0.3px;
 }
 
-/* HOVER EFFECT */
+/* HOVER */
 .skill-tile:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   border-color: #4da3ff;
   box-shadow:
-    0 12px 28px rgba(0,0,0,0.35),
-    0 0 22px rgba(77,163,255,0.35);
+    0 12px 26px rgba(0,0,0,0.35),
+    0 0 20px rgba(77,163,255,0.3);
 }
 
   
@@ -414,6 +400,7 @@ footer a {
 
 
 
+
 <!-- SKILLS SECTION -->
 <section id="skills">
   <h2>Skills</h2>
@@ -421,56 +408,43 @@ footer a {
   <div class="skills-wrapper">
 
     <div class="skill-tile">
-      <div class="icon-wrap">
-        <img src="python.png" alt="Python">
-      </div>
+      <img src="python.png" alt="Python">
       <p>Python</p>
     </div>
 
     <div class="skill-tile">
-      <div class="icon-wrap">
-        <img src="sql.png" alt="SQL">
-      </div>
+      <img src="sql.png" alt="SQL">
       <p>SQL</p>
     </div>
 
     <div class="skill-tile">
-      <div class="icon-wrap">
-        <img src="powerbi.png" alt="Power BI">
-      </div>
+      <img src="powerbi.png" alt="Power BI">
       <p>Power BI</p>
     </div>
 
     <div class="skill-tile">
-      <div class="icon-wrap">
-        <img src="tableau.png" alt="Tableau">
-      </div>
+      <img src="tableau.png" alt="Tableau">
       <p>Tableau</p>
     </div>
 
     <div class="skill-tile">
-      <div class="icon-wrap">
-        <img src="excel.png" alt="Excel">
-      </div>
+      <img src="excel.png" alt="Excel">
       <p>Excel</p>
     </div>
 
     <div class="skill-tile">
-      <div class="icon-wrap">
-        <img src="github.png" alt="GitHub">
-      </div>
+      <img src="github.png" alt="GitHub">
       <p>GitHub</p>
     </div>
 
     <div class="skill-tile">
-      <div class="icon-wrap">
-        <img src="machinelearning.png" alt="Machine Learning">
-      </div>
+      <img src="machinelearning.png" alt="Machine Learning">
       <p>Machine Learning</p>
     </div>
 
   </div>
 </section>
+
 
 
 
