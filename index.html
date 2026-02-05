@@ -432,29 +432,37 @@ footer a {
   margin-top: 8px;
 }
 
-.icon-btn {
-  width: 34px;
-  height: 34px;
+/* PROJECT ICON BUTTONS – SAME AS FOLLOW ME */
+
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.project-icon {
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.4);
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; 
-  background: transparent;
+  text-decoration: none;
 }
 
-  .icon-btn img {
-  max-width: 90%;            /* 🔥 KEY FIX */
-  max-height: 90%;
+.project-icon img {
+  width: 18px;
+  height: 18px;
   object-fit: contain;
-  display: block;
 }
 
-.icon-btn:hover {
+.project-icon:hover {
   background: #4da3ff;
   border-color: #4da3ff;
 }
+
+
 
   
 </style>
@@ -608,10 +616,11 @@ footer a {
         <span>Power BI</span>
       </div>
       <div class="project-buttons">
-        <a href="#" class="icon-btn" title="View Code" target="_blank">
+        <a href="#" target="_blank" class="project-icon">
           <img src="github.png" alt="GitHub">
         </a>
-        <a href="#" class="icon-btn" title="Live Demo" target="_blank">
+      
+        <a href="#" target="_blank" class="project-icon">
           <img src="streamlit.png" alt="Streamlit">
         </a>
       </div>
@@ -635,10 +644,10 @@ footer a {
         <span>Power BI</span>
       </div>
       <div class="project-buttons">
-        <a href="https://github.com/Aswini-Dileep/Customer_Churn_Prediction/blob/main/main.py" class="icon-btn" title="View Code" target="_blank">
+        <a href="https://github.com/Aswini-Dileep/Customer_Churn_Prediction/blob/main/main.py" class="project-icon" title="View Code" target="_blank">
           <img src="github.png" alt="GitHub">
         </a>
-        <a href="https://www.coursera.org/my-learning?myLearningTab=COMPLETED" class="icon-btn" title="Live Demo" target="_blank">
+        <a href="https://www.coursera.org/my-learning?myLearningTab=COMPLETED" class="project-icon" title="Live Demo" target="_blank">
           <img src="streamlit.png" alt="Streamlit">
         </a>
       </div>
