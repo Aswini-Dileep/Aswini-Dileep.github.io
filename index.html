@@ -371,10 +371,26 @@ footer a {
 
 /* DESCRIPTION */
 .project-desc {
-  font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  font-size: 13px;
+  line-height: 1.55;
+  margin-bottom: 12px;
   color: #e6f1f5;
+}
+  
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.project-tools span {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: rgba(77,163,255,0.15);
+  color: #4da3ff;
+  border: 1px solid rgba(77,163,255,0.35);
 }
 
 /* TOOLS */
@@ -409,6 +425,33 @@ footer a {
 .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+
+.icon-btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+
+.icon-btn:hover {
+  background: #4da3ff;
+  border-color: #4da3ff;
 }
 
   
@@ -557,12 +600,18 @@ footer a {
       <p class="project-desc">
         Analyzed sales data to identify revenue trends and top-performing products.
       </p>
-      <p class="project-tools">
-        Python · SQL · Power BI
-      </p>
+      <div class="project-tools">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Power BI</span>
+      </div>
       <div class="project-buttons">
-        <a href="#" class="btn-secondary">GitHub</a>
-        <a href="#" class="btn-secondary">Streamlit</a>
+        <a href="#" class="icon-btn" title="View Code" target="_blank">
+          <img src="github.png" alt="GitHub">
+        </a>
+        <a href="#" class="icon-btn" title="Live Demo" target="_blank">
+          <img src="streamlit.png" alt="Streamlit">
+        </a>
       </div>
     </div>
 
@@ -575,12 +624,18 @@ footer a {
       <p class="project-desc">
         Segmented customers using clustering techniques to improve marketing strategy.
       </p>
-      <p class="project-tools">
-        Python · Pandas · Machine Learning
-      </p>
+      <div class="project-tools">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>Machine Learning</span>
+      </div>
       <div class="project-buttons">
-        <a href="#" class="btn-secondary">GitHub</a>
-        <a href="#" class="btn-secondary">Streamlit</a>
+        <a href="#" class="icon-btn" title="View Code" target="_blank">
+          <img src="github.png" alt="GitHub">
+        </a>
+        <a href="#" class="icon-btn" title="Live Demo" target="_blank">
+          <img src="streamlit.png" alt="Streamlit">
+        </a>
       </div>
     </div>
 
@@ -593,12 +648,18 @@ footer a {
       <p class="project-desc">
         Built an HR dashboard to track attrition, performance, and workforce trends.
       </p>
-      <p class="project-tools">
-        Power BI · Excel · SQL
-      </p>
+      <div class="project-tools">
+        <span>Excel</span>
+        <span>SQL</span>
+        <span>Power BI</span>
+      </div>
       <div class="project-buttons">
-        <a href="#" class="btn-secondary">GitHub</a>
-        <a href="#" class="btn-secondary">Streamlit</a>
+        <a href="#" class="icon-btn" title="View Code" target="_blank">
+          <img src="github.png" alt="GitHub">
+        </a>
+        <a href="#" class="icon-btn" title="Live Demo" target="_blank">
+          <img src="streamlit.png" alt="Streamlit">
+        </a>
       </div>
     </div>
 
