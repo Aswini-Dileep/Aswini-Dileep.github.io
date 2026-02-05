@@ -433,19 +433,40 @@ footer a {
 }
 
 /* PROJECT ICON BUTTONS – SAME AS FOLLOW ME */
-
-
-.project-icon img {
+/* PROJECT ICON LINKS – CLEAN RESET */
+.project-buttons a {
   width: 28px;
-  height: 28px%;
-  object-fit: contain;
-  display: block;
+  height: 28px;
+  border-radius: 50%;          /* circle */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;     /* remove blue bg */
+  text-decoration: none;
+  outline: none;
+  border: 1px solid rgba(255,255,255,0.35);
 }
 
-.project-icon:hover {
-  background: #4da3ff;
+/* remove browser focus / active highlight */
+.project-buttons a:focus,
+.project-buttons a:active {
+  outline: none;
+  background: transparent;
+}
+
+/* icon inside */
+.project-buttons a img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+/* optional hover polish */
+.project-buttons a:hover {
+  background: rgba(77,163,255,0.15);
   border-color: #4da3ff;
 }
+
 
   
 </style>
