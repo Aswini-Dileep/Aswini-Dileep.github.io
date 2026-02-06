@@ -33,6 +33,17 @@ h2 {
 }
 
 /* ===== NAVBAR ===== */
+/* ===== NAVBAR WRAPPER (FREEZE PANE) ===== */
+
+.navbar-wrapper {
+  position: sticky;              /* 🔥 freeze */
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, #0b1f2a, #143542);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+
 .navbar {
   max-width: 1100px;
   margin: auto;
@@ -609,6 +620,33 @@ footer a {
 }
 
 
+/* ===== FOOTER ===== */
+
+.site-footer {
+  margin-top: 120px;
+  padding: 35px 20px;
+  background: rgba(0,0,0,0.15);
+  border-top: 1px solid rgba(255,255,255,0.12);
+  text-align: center;
+}
+
+.footer-content h3 {
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.footer-content p {
+  color: #9fd3ff;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-copy {
+  display: block;
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
 
   
 </style>
@@ -621,17 +659,19 @@ footer a {
   
 <body>
 
-<nav class="navbar">
-  <div class="nav-logo">Aswini Dileep</div>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Certifications</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+<div class="navbar-wrapper">
+  <nav class="navbar">
+    <div class="nav-logo">Aswini Dileep</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
 
 <div class="container">
 
@@ -944,6 +984,7 @@ footer a {
 
   <form
     id="contact-form"
+    class="contact-form"
     action="https://formspree.io/f/mbdarbbd"
     method="POST"
   >
@@ -978,6 +1019,17 @@ footer a {
     }, 500);
   });
 </script>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <h3>Aswini Dileep</h3>
+    <p>Junior Data Scientist & Data Analyst</p>
+    <span class="footer-copy">
+      © 2026 Aswini Dileep. All rights reserved.
+    </span>
+  </div>
+</footer>
 
 
 </body>
