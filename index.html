@@ -126,7 +126,7 @@ h2 {
 
 .hero-buttons a.primary {
   background: #4da3ff;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero-buttons a.secondary {
@@ -159,7 +159,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -547,7 +547,7 @@ footer a {
 
 .contact-title {
   font-size: 38px;
-  color: #9fd3ff;
+  /*color: #9fd3ff;*/
   margin-bottom: 10px;
 }
 
@@ -943,7 +943,7 @@ footer a {
   </p>
 
   <form
-    class="contact-form"
+    id="contact-form"
     action="https://formspree.io/f/mbdarbbd"
     method="POST"
   >
@@ -969,6 +969,15 @@ footer a {
   
 </div>
 
+<script>
+  const form = document.getElementById("contact-form");
+
+  form.addEventListener("submit", function () {
+    setTimeout(() => {
+      form.reset();
+    }, 500);
+  });
+</script>
 
 
 </body>
