@@ -479,7 +479,7 @@ footer a {
   border-radius: 12px;
   margin-bottom: 14px;
   transition: transform 0.3s ease;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
 }
 
@@ -537,11 +537,88 @@ footer a {
   box-shadow: 0 14px 30px rgba(0,0,0,0.35);
 }
 
+/* ===== CONTACT SECTION ===== */
+
+#contact {
+  margin: 120px auto;
+  text-align: center;
+  max-width: 600px;
+}
+
+.contact-title {
+  font-size: 40px;
+  color: #ff5a5a;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  color: #9fd3ff;
+  margin-bottom: 40px;
+}
+
+/* FORM CARD */
+.contact-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  text-align: left;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+/* LABELS */
+.contact-form label {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #0b1f2a;
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #cfd9e3;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #4da3ff;
+}
+
+/* BUTTON */
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 30px;
+  border: none;
+  background: #5c8dff;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #4da3ff;
+}
+
+
 
   
 </style>
 </head>
 
+
+
+
+
+  
 <body>
 
 <nav class="navbar">
@@ -677,7 +754,7 @@ footer a {
 
     <!-- Project 1 -->
     <div class="project-card">
-      <img src="linkedin.png" alt="Project image">
+      <img src="tableau.png" alt="Project image">
       <h3>
         <a href="#" target="_blank">Sales Performance Analysis</a>
       </h3>
@@ -729,7 +806,7 @@ footer a {
 
     <!-- Project 3 -->
     <div class="project-card">
-      <img src="project-placeholder.png" alt="Project image">
+      <img src="machinelearning.png" alt="Project image">
       <h3>
         <a href="#" target="_blank">HR Analytics Dashboard</a>
       </h3>
@@ -858,14 +935,41 @@ footer a {
 </section>
 
 
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h2 class="contact-title">Get in touch</h2>
+  <p class="contact-subtitle">
+    Do you have a project or opportunity in mind? Let’s talk about it.
+  </p>
+
+  <form
+    class="contact-form"
+    action="https://formspree.io/f/mbdarbbd"
+    method="POST"
+  >
+    <label>
+      Name *
+      <input type="text" name="name" required>
+    </label>
+
+    <label>
+      Email Address *
+      <input type="email" name="email" required>
+    </label>
+
+    <label>
+      Message *
+      <textarea name="message" rows="4" required></textarea>
+    </label>
+
+    <button type="submit">SEND</button>
+  </form>
+</section>
+
+  
 </div>
 
-<footer id="contact">
-  <p>Contact</p>
-  <a href="mailto:aswinidileep91@gmail.com">Email</a>
-  <a href="https://github.com/Aswini-Dileep">GitHub</a>
-  <a href="https://www.linkedin.com/in/aswini-dileep">LinkedIn</a>
-</footer>
+
 
 </body>
 </html>
