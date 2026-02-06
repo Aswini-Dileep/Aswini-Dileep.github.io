@@ -441,6 +441,100 @@ footer a {
   display: block;
 }
 
+  
+/* ===== CERTIFICATIONS SECTION ===== */
+
+#certifications {
+  margin-top: 120px;
+}
+
+#certifications h2 {
+  margin-bottom: 40px;
+}
+
+/* GRID */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+}
+
+/* CARD */
+.cert-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.10),
+    rgba(255,255,255,0.04)
+  );
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 18px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* IMAGE */
+.cert-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  transition: transform 0.3s ease;
+}
+
+.cert-card a:hover img {
+  transform: scale(1.03);
+}
+
+/* TITLE */
+.cert-card h3 {
+  font-size: 16px;
+  margin: 8px 0 4px;
+}
+
+/* ORGANIZATION */
+.cert-org {
+  font-size: 13px;
+  opacity: 0.85;
+  margin-bottom: 6px;
+}
+
+/* STATUS */
+.cert-status {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.cert-status.completed {
+  color: #4da3ff;
+}
+
+.cert-status.ongoing {
+  color: #f5c542;
+}
+
+/* BUTTON */
+.cert-btn {
+  display: inline-block;
+  padding: 6px 16px;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 1px solid #4da3ff;
+  color: #4da3ff;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.cert-btn:hover {
+  background: #4da3ff;
+  color: #0b1f2a;
+}
+
+/* HOVER CARD */
+.cert-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.35);
+}
+
 
   
 </style>
@@ -663,15 +757,49 @@ footer a {
 
 
 
-<!-- CERTIFICATIONS -->
+
+<!-- CERTIFICATIONS SECTION -->
 <section id="certifications">
   <h2>Certifications</h2>
-  <ul>
-    <li>IBM Data Science Professional Certificate</li>
-    <li>IBM Data Analyst Professional Certificate</li>
-    <li>Microsoft Power BI Data Analyst</li>
-  </ul>
+
+  <div class="cert-grid">
+
+    <!-- Certification 1 -->
+    <div class="cert-card">
+      <a href="certificate-ds.pdf" target="_blank">
+        <img src="certificate-ds.png" alt="Data Science Certification">
+      </a>
+      <h3>Data Science Certification</h3>
+      <p class="cert-org">Online Learning Platform</p>
+      <p class="cert-status completed">Completed</p>
+      <a href="certificate-ds.pdf" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <!-- Certification 2 -->
+    <div class="cert-card">
+      <a href="certificate-da.pdf" target="_blank">
+        <img src="certificate-da.png" alt="Data Analytics Certification">
+      </a>
+      <h3>Data Analytics Certification</h3>
+      <p class="cert-org">Online Learning Platform</p>
+      <p class="cert-status completed">Completed</p>
+      <a href="certificate-da.pdf" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+    <!-- Certification 3 -->
+    <div class="cert-card">
+      <a href="certificate-ml.pdf" target="_blank">
+        <img src="certificate-ml.png" alt="Machine Learning Certification">
+      </a>
+      <h3>Machine Learning Certification</h3>
+      <p class="cert-org">Online Learning Platform</p>
+      <p class="cert-status ongoing">Ongoing</p>
+      <a href="certificate-ml.pdf" target="_blank" class="cert-btn">View Certificate</a>
+    </div>
+
+  </div>
 </section>
+
 
 </div>
 
