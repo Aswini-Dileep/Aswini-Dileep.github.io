@@ -358,14 +358,25 @@ footer a {
   transition: all 0.3s ease;
 }
 
-/* IMAGE */
-.project-card img {
+
+
+
+/* FIX PROJECT IMAGE SIZE */
+.project-image {
   width: 100%;
+  height: 180px;          /* 🔥 same height for all images */
+  overflow: hidden;
   border-radius: 12px;
   margin-bottom: 16px;
-  height: 180px;          /* 👈 increase this value */
-  object-fit: cover;
 }
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 🔥 key line */
+  display: block;
+}
+
 
 /* TITLE */
 .project-card h3 {
@@ -787,7 +798,6 @@ footer a {
 
 
 
-
 <!-- PROJECTS SECTION -->
 <section id="projects">
   <h2>Projects</h2>
@@ -796,23 +806,29 @@ footer a {
 
     <!-- Project 1 -->
     <div class="project-card">
-      <img src="tableau.png" alt="Project image">
+      <div class="project-image">
+        <img src="tableau.png" alt="Sales Performance Analysis">
+      </div>
+
       <h3>
         <a href="#" target="_blank">Sales Performance Analysis</a>
       </h3>
+
       <p class="project-desc">
         Analyzed sales data to identify revenue trends and top-performing products.
       </p>
+
       <div class="project-tools">
         <span>Python</span>
         <span>SQL</span>
         <span>Power BI</span>
       </div>
+
       <div class="project-buttons">
         <a href="#" target="_blank" class="project-icon" title="View Code">
           <img src="github.png" alt="GitHub">
         </a>
-      
+
         <a href="#" target="_blank" class="project-icon" title="Live Demo">
           <img src="streamlit.png" alt="Streamlit">
         </a>
@@ -821,13 +837,20 @@ footer a {
 
     <!-- Project 2 -->
     <div class="project-card">
-      <img src="excel.png" alt="Project image">
+      <div class="project-image">
+        <img src="excel.png" alt="Customer Segmentation">
+      </div>
+
       <h3>
-        <a href="https://github.com/Aswini-Dileep/Customer_Churn_Prediction" target="_blank">Customer Segmentation</a>
+        <a href="https://github.com/Aswini-Dileep/Customer_Churn_Prediction" target="_blank">
+          Customer Segmentation
+        </a>
       </h3>
+
       <p class="project-desc">
         Segmented customers using clustering techniques to improve marketing strategy.
       </p>
+
       <div class="project-tools">
         <span>Python</span>
         <span>Pandas</span>
@@ -836,11 +859,14 @@ footer a {
         <span>SQL</span>
         <span>Power BI</span>
       </div>
+
       <div class="project-buttons">
-        <a href="https://github.com/Aswini-Dileep/Customer_Churn_Prediction/blob/main/main.py" class="project-icon" title="View Code" target="_blank">
+        <a href="https://github.com/Aswini-Dileep/Customer_Churn_Prediction/blob/main/main.py"
+           class="project-icon" title="View Code" target="_blank">
           <img src="github.png" alt="GitHub">
         </a>
-        <a href="https://www.coursera.org/my-learning?myLearningTab=COMPLETED" class="project-icon" title="Live Demo" target="_blank">
+
+        <a href="#" class="project-icon" title="Live Demo" target="_blank">
           <img src="streamlit.png" alt="Streamlit">
         </a>
       </div>
@@ -848,33 +874,38 @@ footer a {
 
     <!-- Project 3 -->
     <div class="project-card">
-      <img src="machinelearning.png" alt="Project image">
+      <div class="project-image">
+        <img src="machinelearning.png" alt="HR Analytics Dashboard">
+      </div>
+
       <h3>
         <a href="#" target="_blank">HR Analytics Dashboard</a>
       </h3>
+
       <p class="project-desc">
         Built an HR dashboard to track attrition, performance, and workforce trends.
       </p>
+
       <div class="project-tools">
         <span>Excel</span>
         <span>SQL</span>
         <span>Power BI</span>
       </div>
+
       <div class="project-buttons">
         <a href="#" target="_blank" class="project-icon" title="View Code">
           <img src="github.png" alt="GitHub">
         </a>
-      
+
         <a href="#" target="_blank" class="project-icon" title="Live Demo">
           <img src="streamlit.png" alt="Streamlit">
         </a>
       </div>
     </div>
 
-
-
   </div>
 </section>
+
 
 
 
