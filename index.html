@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <title>Aswini Dileep | Junior Data Scientist</title>
+
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/png" href="favicon.png">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- FONT -->
@@ -51,6 +55,17 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-logo {
+  height: 34px;
+  width: auto;
 }
 
 .nav-logo {
@@ -364,7 +379,7 @@ footer a {
 /* FIX PROJECT IMAGE SIZE */
 .project-image {
   width: 100%;
-  height: 180px;          /* 🔥 same height for all images */
+  height: 220px;          /* 🔥 same height for all images */
   overflow: hidden;
   border-radius: 12px;
   margin-bottom: 16px;
@@ -456,13 +471,25 @@ footer a {
 
 /* PROJECT ICON BUTTONS */
 
-  .project-icon img {
+.project-icon img {
   width: 28px;
-  height: 28px%;
+  height: 28px;
   object-fit: contain;
   display: block;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.4);
 }
-
+/* 
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+}  */
   
 /* ===== CERTIFICATIONS SECTION ===== */
 
@@ -672,7 +699,11 @@ footer a {
 
 <div class="navbar-wrapper">
   <nav class="navbar">
-    <div class="nav-logo">Aswini Dileep</div>
+    <div class="nav-left">
+      <img src="my_logo.png" alt="Aswini Logo" class="site-logo">
+      <span class="nav-logo">Aswini Dileep</span>
+    </div>
+    
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -873,30 +904,31 @@ footer a {
     <!-- Project 3 -->
     <div class="project-card">
       <div class="project-image">
-        <img src="machinelearning.png" alt="HR Analytics Dashboard">
+        <img src="portfolio.png" alt="Portfolio Website Creation">
       </div>
 
       <h3>
-        <a href="#" target="_blank">HR Analytics Dashboard</a>
+        <a href="https://github.com/Aswini-Dileep/Aswini-Dileep.github.io" target="_blank">Personal Portfolio Website</a>
       </h3>
 
       <p class="project-desc">
-        Built an HR dashboard to track attrition, performance, and workforce trends.
+        Designed and developed a responsive personal portfolio to showcase projects, skills, and certifications.
       </p>
 
       <div class="project-tools">
-        <span>Excel</span>
-        <span>SQL</span>
-        <span>Power BI</span>
+        <span>GitHub</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>ChatGPT</span>
       </div>
 
       <div class="project-buttons">
-        <a href="#" target="_blank" class="project-icon" title="View Code">
+        <a href="https://github.com/Aswini-Dileep/Aswini-Dileep.github.io/blob/main/index.html" target="_blank" class="project-icon" title="View Code">
           <img src="github.png" alt="GitHub">
         </a>
 
-        <a href="#" target="_blank" class="project-icon" title="Live Demo">
-          <img src="streamlit.png" alt="Streamlit">
+        <a href="https://aswini-dileep.github.io/" target="_blank" class="project-icon" title="Live Demo">
+          <img src="my_logo.png" alt="My Website">
         </a>
       </div>
     </div>
